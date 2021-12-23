@@ -6,6 +6,7 @@ import 'dart:math';
 import 'package:guess_number/game.dart';
 
 void main() {
+
   while(true) {
     var game = Game();
     game.playGame();
