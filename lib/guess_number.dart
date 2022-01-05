@@ -45,7 +45,7 @@ void main() {
     }else{
       print(' You Have Played : ${Game.myList.length} games');
       for(int i=0; i<Game.myList.length; i++){
-        print(' Game #$i : ${Game.myList[i]} guesses');
+        print(' Game #${i+1} : ${Game.myList[i]} guesses');
       }
     }
   }
