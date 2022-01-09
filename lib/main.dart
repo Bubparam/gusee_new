@@ -57,7 +57,10 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Image.asset('assets/images/Num2.jpg'),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Image.asset('assets/images/guess_logo.png',height: 300, width: 200),
                   TextField(),
                   SizedBox(
                     height: 10.0,
