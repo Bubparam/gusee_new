@@ -29,8 +29,7 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(
-          decoration: BoxDecoration(
-              color: Colors.pink.shade50,
+          decoration: BoxDecoration(color: Colors.pink.shade50,
               //border: Border.all(width: 10.0, color: Colors.black38),
               boxShadow: [
                 BoxShadow(
@@ -50,24 +49,33 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        'Guess The Number ',
-                        style:
-                            TextStyle(fontSize: 20.0, color: Color(0x80FF0000)),
+                      Image.asset('assets/images/guess_logo.png',
+                          height: 300, width: 200),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Guess',
+                            style: TextStyle(
+                                fontSize: 50.0, color: Color(0x80FF0000)),
+                          ),
+                          Text(
+                            'The Number',
+                            style: TextStyle(
+                                fontSize: 30.0, color: Color(0x80FF0000)),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Image.asset('assets/images/guess_logo.png',height: 300, width: 200),
                   TextField(),
                   SizedBox(
                     height: 10.0,
                   ),
                   TextButton(
                     child: Text('Guess'),
-                    style: TextButton.styleFrom(primary: Colors.white, backgroundColor: Colors.pink),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white, backgroundColor: Colors.pink),
                     onPressed: () {},
                   ),
                 ],
