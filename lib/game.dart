@@ -7,7 +7,7 @@ class Game{
   int count = 0;
   Game({int maxRandom = 100}){
     var r = Random();
-    _answer = r.nextInt(maxRandom);
+    _answer = r.nextInt(maxRandom)+1;
   }
 
   int doGuess(int num){
@@ -18,19 +18,6 @@ class Game{
       return -1;
     }else {
       return 0;
-    }
-  }
-
-  bool playAgain(){
-    while(true) {
-      String? input2 = stdin.readLineSync();
-      myList.add(count);
-      count = 0;
-      if(input2 == 'y' || input2 == 'Y') {
-          return true;
-      }else if(input2 == 'n' || input2 == 'N'){
-          return false;
-      }
     }
   }
 }
